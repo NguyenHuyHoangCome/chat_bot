@@ -6,9 +6,13 @@ app = Flask(__name__)
 def hello():
     return render_template('index.html')
 
-@app.route("/login")
+@app.route("/bot")
 def login():
     return render_template('bot.html')
+
+@app.route("/test")
+def test():
+    return render_template('test.html')
 
 
  
